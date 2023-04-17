@@ -13,4 +13,11 @@ class WelcomeController extends AbstractController
     {
         return $this->render('pages/visitor/welcome/index.html.twig');
     }
+
+    // #[Route('/test', name: 'visitor.welcome.test')]
+    // public function test(): Response
+    // {
+    //     dd('test');
+    //     // return $this->render('pages/visitor/welcome/index.html.twig');
+    // }
 }
