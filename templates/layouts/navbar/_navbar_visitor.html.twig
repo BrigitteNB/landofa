@@ -31,21 +31,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('admin.home.index')}}">Espace admin </a>
                         </li>
-                    {# {% elseif is_granted('ROLE_USER') %}
+                    {% elseif is_granted('ROLE_USER') %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('user.home.index')}}">Espace privé </a>
-                        </li> #}
+                        </li>
                     {% endif %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('app.logout')}}">Déconnexion </a>
                         </li>
-                {# {% else %}
+                {% else %}
                     <li class="nav-item">
                             <a class="nav-link" href="{{ path('visitor.authentication.login')}}">Connexion </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('visitor.registration.register')}}">Inscription</a>
-                    </li>    #}
+                    </li>   
                 {% endif %}
               
             </ul>

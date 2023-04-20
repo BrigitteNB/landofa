@@ -1,0 +1,12 @@
+{% extends "themes/base_admin.html.twig" %}
+
+{% block title %}Liste des articles{% endblock %}
+
+{% block description %}Liste des articles{% endblock %}
+
+{% block main %}
+    <h1 class="text-center my-3 display-5">Nouvel article</h1>
+    <div class="d-flex justify-content-end align-content-center my-3">
+        <a href="{{ path('admin.post.create')}}" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> Nouvelle article</a>
+    </div>
+{% endblock %}
